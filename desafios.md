@@ -306,7 +306,7 @@ A imagem a seguir evidencia a execução do comando "ls" no sistema operacional:
 
 Uma vez que seja possível executar comandos no sistema operacional da aplicação,
 é preciso encontrar o ransomware da Wicked S.A para obter a última flag. A busca
-pode ser feita tanto de forma manual, mas o comando abaixo pode automatizá-la:
+pode ser feita de forma manual, mas o comando abaixo pode automatizá-la:
 
 ```bash
 find / -iname boiuna -type f 2>/dev/null
