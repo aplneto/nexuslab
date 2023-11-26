@@ -319,3 +319,31 @@ A execução desse comando resulta no output da imagem abaixo:
 Por fim, a execução desse arquivo resulta no seguinte output:
 
 ![](/evidences/A_taste_of_your_own_medicine_7.png)
+
+## Anexo
+
+A seguir está uma lista com algumas das vulnerabilidades identificadas na
+aplicação durante o seu desenvolvimento e durante o CTF. Algumas delas foram
+descritas nesta resolução e outras não. Tente identificar essas vulnerabilidades
+e, caso se sinta confortável, outras falhas que podem ter surgido no processo de
+desenvolvimento. Caso queira feedback, fique a vontade para criar uma issue
+sugerindo uma solução para uma vulnerabilidade identificada ou apontando uma
+nova vulnerabilidade. Vamos respondê-los assim que possível.
+
+* [Sensitive information leakage](https://cwe.mitre.org/data/definitions/200.html)
+* [Cross-site scripting](https://cwe.mitre.org/data/definitions/79.html)
+* [Server-Side Template Injection](https://cwe.mitre.org/data/definitions/1336.html)
+* [Mass assignment](https://cwe.mitre.org/data/definitions/915.html)
+* [Improper Authorization](https://cwe.mitre.org/data/definitions/285.html)
+* [Insecure Direct Object Reference](https://cwe.mitre.org/data/definitions/639.html)
+* [Improper Restriction of Excessive Authentication Attempts](https://cwe.mitre.org/data/definitions/307.html)
+* [User enumeration](https://cwe.mitre.org/data/definitions/204.html)
+
+## Referências
+
+* https://www.sidechannel.blog/cross-site-scripting-xss-variantes-e-correcao/
+* https://portswigger.net/web-security/server-side-template-injection
+* https://www.sidechannel.blog/falhas-no-controle-de-acesso-em-aplicacoes-web/
+* https://www.sidechannel.blog/era-uma-vez-uma-enumeracao-de-usuarios/
+* https://www.sidechannel.blog/ataques-de-forca-bruta-medidas-de-protecao-e-mitigacao/
+* 
