@@ -1,0 +1,31 @@
+<section class="container">
+    <% @projects.each do |project|%>
+        <div class="box content">
+            <article>
+                <h4>
+                    <a href="/project/<%= project.id %>">
+                        <%= project.title %>
+                    </a>
+                </h4>
+                <div class="media">
+                    <div class="media-left">
+                        <p class="image is-32x32">
+                            <img src="/profiles/<%= project.user.nil? ? '' : project.user.profile_picture %>">
+                        </p>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <a href="/user/<%= project.user_id%>">@<%= project.user.nil? ? '[EXCLUÍDO]' : project.user.username%></a>
+                                Última atualização: <%= project.updated_at %>
+                            </p>
+                            <% if is_admin? %>
+                                <button class="button is-danger">Apagar</button>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    <% end %>
+</section>

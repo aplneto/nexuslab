@@ -1,0 +1,34 @@
+- title: Algoritmo de Aprendizado de Máquina
+  is_public: true
+  created_at: "2015-10-02 08:17:06"
+  updated_at: "2018-11-23 18:22:13"
+  user_id: 2
+  abstract: "Objetivo: Criar um algoritmo de aprendizado de máquina para prever padrões de consumo de energia em ambientes industriais."
+
+- title: Novas Técnicas de Cultivo de Células-Tronco
+  is_public: true
+  created_at: "2017-11-11 08:17:06"
+  updated_at: "2021-11-11 19:17:10"
+  user_id: 3
+  abstract: "Objetivo: Investigar e desenvolver novas técnicas de cultivo de células-tronco para avançar na pesquisa biomédica."
+
+- title: Aprimoramento da Infraestrutura de Segurança Cibernética
+  is_public: true
+  created_at: "2014-07-12 07:15:00"
+  updated_at: "2018-10-02 22:55:53"
+  user_id: 4
+  abstract: "Objetivo: Reforçar a infraestrutura de segurança cibernética para proteger contra ameaças emergentes."
+
+- title: Análise de Tendências Competitivas
+  is_public: true
+  created_at: "2014-07-12 07:15:00"
+  updated_at: "2018-10-02 22:55:53"
+  user_id: 11
+  abstract: "Relatórios solicitados pela gerência"
+
+- title: Boiuna
+  is_public: false
+  created_at: "2017-04-01 07:15:00"
+  updated_at: "2017-08-18 22:55:53"
+  user_id: 11
+  abstract: "Relatório de operação e protótipo para operações futuras"

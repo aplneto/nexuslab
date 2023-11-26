@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="content has-text-centered">
+        <h1 class="title">
+            <%= @project.title %>
+        </h1>
+    </div>
+    <% flash.each do |key, value| %>
+        <div class="message is-danger">
+            <div class="message-header">
+                <%= key.to_s%>
+                <button class="delete" aria-label="delete" onclick="this.parentElement.parentElement.style.display='none'"></button>
+            </div>
+            <div class="message-body">
+                <% value.each do |message| %>
+                    <p><%= message %></p>
+                <% end %>
+            </div>
+        </div>
+    <% end %>
+    <%= yield %>
+    <div class="box">
+        <div class="buttons">
+            <% if is_admin? || session[:id] == @project.user.id %>
+            <div class="columns">
+                <div class="column">
+                    <button class="button is-info" onclick="sendInvite()">Convidar</button>
+                </div>
+                <div class="column">
+                    <input type="hidden" name="id" id="projectId" value="<%= @project.id%>">
+                    <input type="text" name="researcher" id="researcher" class="input" placeholder="Pesquisador">
+                </div>
+            </div>
+
+            <script>
+                function sendInvite () {
+                    let form = document.createElement('form');
+                    form.method = 'POST'
+                    form.action = '/project/invite'
+
+                    let idInput = document.createElement('input')
+                    idInput.type = 'hidden';
+                    idInput.name = 'id';
+                    idInput.value = document.getElementById('projectId').value;
+
+                    let usernameInput = document.createElement('input')
+                    usernameInput.type = 'hidden';
+                    usernameInput.name = 'username';
+                    usernameInput.value = document.getElementById('researcher').value;
+
+                    form.appendChild(idInput);
+                    form.appendChild(usernameInput);
+
+                    document.body.appendChild(form);
+
+                    form.submit();
+                }
+            </script>
+            <% end %>
+        </div>
+    </div>
+</div>

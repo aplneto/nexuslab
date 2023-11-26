@@ -1,0 +1,38 @@
+CHANGELOG
+
+Principais mudanças do projeto "Boiúna"
+
+Versão 1.0.0 - Lançamento Inicial (02/07/2017)
+
+Implementação de Algoritmo de Criptografia:
+
+Adição do algoritmo de criptografia AES-256 para garantir a segurança e confidencialidade dos dados alvo.
+Integração de Mecanismos de Evasão:
+
+Inclusão de técnicas avançadas de evasão, como polimorfismo de código e ofuscação, para dificultar a detecção por parte de soluções antivírus.
+Otimização do Módulo de Propagação:
+
+Aprimoramento dos mecanismos de propagação, incluindo exploração de vulnerabilidades de day-zero e aprimoramento das táticas de phishing.
+Versão 1.1.0 - Refinamento (17/07/2017)
+
+Aprimoramento da Interface de Resgate:
+
+Atualização da interface de resgate para fornecer informações mais claras e instruções precisas para as vítimas, incluindo a implementação de um sistema de pagamento mais eficiente.
+Correção de Bugs e Melhorias de Desempenho:
+
+Identificação e correção de bugs reportados durante testes, além de otimizações para melhorar a eficiência e a estabilidade geral do "Boiúna".
+Versão 1.2.0 - Colaboração com Operadores (Data: [Data de Colaboração])
+
+Integração com Plataformas de Comando e Controle (C2):
+
+Adição de funcionalidades que permitem a integração do "Boiúna" com plataformas de C2 controladas por operadores, possibilitando uma colaboração mais eficaz.
+Atualização Dinâmica de Chaves de Criptografia:
+
+Implementação de um sistema dinâmico para a atualização periódica das chaves de criptografia, aumentando a segurança e complicando a recuperação de dados sem o pagamento do resgate.
+Versão 1.2.1 - Correções e Ajustes (17/08/2017)
+
+Correção de Vulnerabilidades Reportadas:
+Identificação e correção de vulnerabilidades que poderiam ser exploradas por terceiros, visando manter a integridade do "Boiúna".
+Este changelog é completamente fictício e faz parte de um cenário simulado para fins de treinamento em um CTF. Todas as informações são inventadas e não refletem a realidade.
+
+ATENÇÃO: O EXECUTÁVEL APENAS ESTÁ DISPONÍVEL PARA DOWNLOAD ATRAVÉS DE SSH. ACESSO DEVE SER SOLICITADO AO DIRETOR DE OIC.

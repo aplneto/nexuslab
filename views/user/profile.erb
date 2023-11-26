@@ -1,0 +1,131 @@
+<% if @user.id.nil? %>
+<input type="hidden" name="Flag" value="TAC{bf6838c55e28d57ddc4b202c5e0a8c21440dcf28585185a1a75496d0a878a007}">
+<% end %>
+
+<div class="container">
+    <div class="box">
+        <div class="columns">
+            <div class="content column is-half">
+                <figure class="image is-256x256">
+                    <img src="profiles/<%= @user.profile_picture %>" alt="<%= @user.username %>" class="is-rounded is-1by1" id="profilePicture">
+                </figure>
+                <% if params[:id].to_i === session[:id].to_i %>
+                    <form action="/user/upload_picture" method="POST" id="pictureUploadForm" enctype="multipart/form-data">
+                        <input type="file" name="picture" id="pictureInput" class="input" style="display: none;" accept="image/*">
+                    </form>
+                    <div class="content has-text-centered">
+                        <button class="button is-info" id="pictureButton">Mudar foto</button>
+                    </div>
+                    <script src="/js/profile_picture.js"></script>
+                <% end %>
+            </div>
+            <div class="content column is-half">
+                <div class="content has-text-centered">
+                    <h1 class="title">Perfil</h1>
+                </div>
+                <% if @user.id.nil? %>
+                    <form action="/user/" method="POST" id="userForm">
+                <% else %>
+                    <form action="/user/<%= @user.id %>" method="PUT" id="userForm"></form>
+                <% end %>
+                    <div class="field">
+                        <label for="name" class="label">Nome</label>
+                        <div class="control">
+                            <input required <% if not (@user.id.nil?) || params[:id].to_i != session[:id].to_i %>disabled<% end %> type="text" name="name" class="input" id="name" value="<%= @user.name %>">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email" class="label">E-mail</label>
+                        <div class="control">
+                            <input required <% unless @user.email.nil? %>disabled<% end %> type="email" name="email" id="email" class="input" value="<%= @user.email %>">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="username" class="label">Username</label>
+                        <div class="control">
+                            <input <% if not (@user.id.nil?) || params[:id].to_i != session[:id].to_i %>disabled<% end %> type="text" name="username" id="username" class="input" value="<%= @user.username %>">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="about" class="label">Sobre</label>
+                        <div class="control">
+                            <textarea <% if not (@user.id.nil?) || params[:id].to_i != session[:id].to_i %>disabled<% end %> name="about" id="about" cols="30" rows="10" class="textarea"><%= @user.about %></textarea>
+                        </div>
+                    </div>
+                    <% if @user.is_admin %>
+                        <!--
+                        <div class="field">
+                            <spam>TAC{26b0a3d0a2f49b630a75dba50d640eab51aff655f05dbe5c07cc3b886ba26eed}</spam>
+                            <label for="is_admin" class="label">Administrador</label>
+                            <div class="control">
+                                <input type="checkbox" name="is_admin" id="is_admin">
+                            </div>
+                        </div>
+                        -->
+                    <% end %>
+                    <% if @user.password.nil? %>
+                    <div class="field">
+                        <label for="password" class="label">Senha</label>
+                        <div class="control">
+                            <input type="password" name="password" id="password" class="input">
+                        </div>
+                    </div>
+                    <% end %>
+                    <div class="content has-text-centered">
+                    <% if @user.id.nil? %>
+                        <input type="submit" value="Salvar" class="button is-info">
+                    <% elsif params[:id].to_i === session[:id].to_i %>
+                        <input type="submit" value="Editar" class="button is-info">
+                        <a class="button is-danger" href="/auth/change_password">Mudar senha</a>
+                    <% end %>
+                    </div>
+                </form>
+            </div>
+            <% flash.each do |key, value| %>
+                <div class="message is-danger">
+                    <div class="message-header">
+                        <%= key.to_s%>
+                        <button class="delete" aria-label="delete" onclick="this.parentElement.parentElement.style.display='none'"></button>
+                    </div>
+                    <div class="message-body">
+                        <% value.each do |message| %>
+                            <p><%= message %></p>
+                        <% end %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+    <div class="box">
+        <div class="content has-text-centered">
+            <div class="content has-text-centered">
+                    <h1 class="title">Projetos</h1>
+                </div>
+        </div>
+        <% if @public_projects.length > 0%>
+        <table class="table">
+            <thead>
+                <th>Título</th>
+            </thead>
+            <tfoot>
+                <th>Título</th>
+            </tfoot>
+            <% @public_projects.each do |project| %>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="/project/<%= project.id%>"><%= project.title %></a>
+                        </td>
+                    </tr>
+                </tbody>
+            <% end %>
+        </table>
+        <% else %>
+        <div class="message is-danger">
+            <div class="message-body has-text-centered">
+                Este usuário ainda não possui projetos públicos
+            </div>
+        </div>
+        <% end %>
+    </div>
+</div>

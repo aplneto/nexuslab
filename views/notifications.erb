@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="columns is-multiline">
+        <% @notifications.each do |notification| %>
+            <div class="content column is-6 is-offset-3">
+                <div class="notification">
+                    <a href="/avisos/<%= notification.id%>" class="dropdown-item">
+                        <%= notification.title %>
+                    </a>
+                </div>
+            </div>
+        <%end%>
+    </div>
+</div>

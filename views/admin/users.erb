@@ -1,0 +1,34 @@
+<section class="container">
+    <% @users.each do |user|%>
+        <div class="box content">
+            <article>
+                <h4>
+                    <a href="/user/<%= user.id %>">
+                        <%= user.name %>
+                    </a>
+                </h4>
+                <div class="media">
+                    <div class="media-left">
+                        <p class="image is-64x64">
+                            <img src="/profiles/<%= user.profile_picture %>">
+                        </p>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <a href="/user/<%= user.id%>">@<%= user.username %></a>
+                            </p>
+                            <p>
+                                <%= user.about %>
+                            </p>
+                            <% if is_admin? %>
+                                <button class="button is-danger" id="deleteButton" onclick="deleteUserRequest(<%= user.id%>)">Apagar</button>
+                                <button disabled class="button is-info disabled">Editar</button>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    <% end %>
+</section>

@@ -1,0 +1,45 @@
+<div class="container has-text-center">
+    <script src="/js/login.js"></script>
+    <div class="box has-text-left column is-4 is-offset-4">
+        <form action="/auth/login" method="post">
+            <div class="field">
+                <label for="emailInput" class="label">E-mail</label>
+                <div class="control has-icons-left">
+                    <input type="email" name="email" id="emailInput" class="input" required placeholder="email@email.com">
+                    <span class="icon is-small is-left">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label for="passwordInput" class="label">Senha</label>
+                <div class="control has-icons-left">
+                    <input type="password" name="password" id="passwordInput" class="input" required placeholder="********">
+                    <span class="icon is-small is-left">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <label for="rememberBox" class="checkbox">
+                    <input type="checkbox" name="remember" id="rememberBox"> Lembrar
+                </label>
+            </div>
+            <% if defined?(@error) %>
+                <div class="content has-text-danger is-uppercase">
+                    <strong><%= @error %></strong>
+                </div>
+            <% end %>
+            <div class="field has-text-centered">
+                <div class="columns">
+                    <div class="column is-half">
+                        <button class="button is-info is-fullwidth" id="loginButton">Entrar</button>
+                    </div>
+                    <div class="column is-half">
+                        <button class="button is-fullwidth" disabled>Cadastro</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

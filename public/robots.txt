@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /user/*
+Disallow: /project/*
+Disallow: /auth/profile
+Disallow: /admin
+Disallow: /debug
+Disallow: /flag.txt

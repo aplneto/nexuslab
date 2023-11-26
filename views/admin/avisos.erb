@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="box">
+        <form action="/admin/avisos<% unless @aviso.nil?%><%= '?id=' + @aviso.id.to_s %><% end %>" method="post">
+            <div class="field">
+                <label for="title" class="label">
+                    Título
+                </label>
+                <div class="control">
+                    <input type="text" name="title" id="title" required class="input" placeholder="Título do aviso"<% unless @aviso.nil?%> value = '<%= @aviso.title %>' <% end %> >
+                </div>
+            </div>
+            <div class="field">
+                <label for="body" class="label">
+                    Conteúdo
+                </label>
+                <div class="control">
+                    <textarea name="body" id="body" cols="30" rows="10" class="textarea" required><% unless @aviso.nil?%><%= @aviso.body %><% end %></textarea>
+                </div>
+            </div>
+            <div class="field has-text-centered">
+                <div class="control">
+                    <input type="submit" value="<% unless @aviso.nil?%>Editar Aviso<% else %>Criar Aviso<% end %>" class="button is-info">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+
+<div class="columns is-multiline">
+    <%@questions.each do |question|%>
+        <div class="box column is-full">
+            <h1 class="title">
+                <%=question.faq%>
+            </h1>
+            <h2 class="subtitle">
+                <%=question.answer%>
+            </h2>
+        </div>
+    <%end%>
+</div>

@@ -1,0 +1,77 @@
+- name: Gustavo Santos
+  username: gustavo.santos
+  email: gustavo.santos@wickedcorp.online
+  about: "Administrador da Plataforma. Responsável por garantir o funcionamento eficiente e seguro da InnoQuest. Comprometido com a excelência operacional e suporte técnico."
+  password: cV8PUj2iPhSFCViJNgE7
+  is_admin: true
+  profile_picture: gustavo_santos.jpeg
+
+- name: João da Silva
+  username: joao.silva
+  email: joao.silva@wickedcorp.online
+  about: "Gestor de Projetos de Inteligência Artificial. Apaixonado por inovação e tecnologias disruptivas. Trabalhando para impulsionar a Malditos Ltda. para o futuro."
+  password: senhajoao
+  profile_picture: joao_silva.jpeg
+
+- name: Maria Oliveira
+  username: maria.oliveira
+  email: maria.oliveira@wickedcorp.online
+  about: "Gestora de Biotecnologia. Comprometida com avanços científicos e descobertas revolucionárias. Construindo o futuro da Malditos Ltda. com paixão pela biotecnologia."
+  password: maria1995
+  profile_picture: maria_oliveira.jpeg
+
+- name: André Santos
+  username: andre.santos
+  email: andre.santos@wickedcorp.online
+  about: "Diretor de Segurança Cibernética. Especialista em proteger a Malditos Ltda. contra ameaças digitais. Buscando continuamente aprimorar a segurança em um mundo digital em constante evolução."
+  password: andre6969
+  profile_picture: andre_santos.jpeg
+
+- name: Camila Lima
+  username: camila.lima
+  email: camila.lima@wickedcorp.online
+  about: "Gestora de Inovação em Energias Renováveis. Comprometida em impulsionar a sustentabilidade. Trabalhando na vanguarda da inovação para um futuro mais verde."
+  password: rush2112
+  profile_picture: camila_lima.jpeg
+
+- name: Roberto Costa
+  username: roberto.costa
+  email: roberto.costa@wickedcorp.online
+  about: "Chefe de Pesquisa em Ciência de Dados. Apaixonado por transformar dados em insights. Liderando a equipe para descobertas que impulsionarão a Malditos Ltda. para novas alturas."
+  password: apollo
+  profile_picture: roberto_costa.jpeg
+
+- name: Ana Sousa
+  username: ana.sousa
+  email: ana.sousa@wickedcorp.online
+  about: "Gerente de Desenvolvimento de Software. Construindo soluções inovadoras para desafios complexos. Apaixonada por código e pela busca constante da excelência em desenvolvimento de software."
+  password: cocacola
+  profile_picture: ana_souza.jpeg
+
+- name: Juliana Costa
+  username: juliana.costa
+  email: juliana.costa@wickedcorp.online
+  about: "Gestora de Projetos de Realidade Virtual. Inovadora e visionária, liderando projetos que exploram os limites da experiência virtual. Transformando conceitos em realidade."
+  password: ramirez
+  profile_picture: juliana_costa.jpeg
+
+- name: Lucas Oliveira
+  username: lucas.oliveira
+  email: lucas.oliveira@wickedcorp.online
+  about: "Chefe de Pesquisa em Nanotecnologia. Especializado em explorar o mundo em escala nanométrica para avanços revolucionários. Comprometido com a vanguarda da ciência."
+  password: newyorkrocks
+  profile_picture: lucas_oliveira.jpeg
+
+- name: Amanda Lima
+  username: amanda.lima
+  email: amanda.lima@wickedcorp.online
+  about: "Gestora de Sustentabilidade Corporativa. Guiando a Malditos Ltda. para práticas empresariais mais sustentáveis. Comprometida com o equilíbrio entre negócios e responsabilidade ambiental."
+  password: amandaamaamanda
+  profile_picture: amanda_lima.jpeg
+
+- name: Ricardo Mendes
+  username: ricardo.mendes
+  email: ricardo.mendes@wickedcorp.online
+  about: "Gestor de Operações de Inteligência Competitiva. Especializado em conduzir análises de ameaças e coleta de informações estratégicas para garantir a vantagem competitiva da Malditos Ltda. em um mercado dinâmico."
+  password: cyberpunk2077bestgameever
+  profile_picture: ricardo_mendes.jpeg

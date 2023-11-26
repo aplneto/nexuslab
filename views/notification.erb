@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="container has-text-centered">
+        <h1 class="title"><%= @notification.title%></h1>
+    </div>
+    <div class="column is-6 is-offset-3">
+        
+        <div class="content">
+            <%= erb @notification.body %>
+        </div>
+        <div class="content">
+            <p><%= @notification.user.username %></p>
+            <p>Última atualização: <%= @notification.updated_at %></p>
+        </div>
+        <% if is_admin?%>
+            <div class="content">
+                <a href="/admin/avisos?id=<%= @notification.id %>" class="button is-info">Editar</a>
+                <a href="/admin/avisos/delete/<%= @notification.id %>" class="button is-danger">Apagar</a>
+            </div>
+        <% end %>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="columns">
+        <div class="column is-3">
+            <aside class="menu is-hidden-mobile">
+                <p class="menu-label">
+                    Painel Administrativo
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/admin/users" id="users">Usuários</a></li>
+                    <li><a href="/admin/projects" id="projects">Projetos</a></li>
+                    <li><a href="/admin/avisos" id="avisos">Avisos</a></li>
+                    <li><a href="/admin/debug" id="debug">Debug</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="column is-9">
+            <%= yield %>
+        </div>
+    </div>
+</div>
+
+<script src="/js/admin.js"></script>

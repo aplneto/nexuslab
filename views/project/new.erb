@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="box">
+        <div class="content has-text-centered">
+            <h1 class="title">
+                Novo Projeto
+            </h1>
+        </div>
+        <form action="/project" method="post" class="form">
+            <div class="field">
+                <label for="title" class="label">Título</label>
+                <div class="control">
+                    <input type="text" name="title" id="title" class="input" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="abstract" class="label">Resumo</label>
+                <div class="control">
+                    <input type="text" name="abstract" id="abstract" class="input">
+                </div>
+            </div>
+            <div class="field">
+                <label for="is_public" class="label">Público</label>
+                <div class="control">
+                    <input type="checkbox" name="is_public" id="is_public">
+                </div>
+            </div>
+            <div class="field">
+                <input type="submit" value="Criar" class="button is-info">
+            </div>
+        </form>
+        <% flash.each do |key, value| %>
+            <div class="message is-danger">
+                <div class="message-header">
+                    <%= key.to_s%>
+                    <button class="delete" aria-label="delete" onclick="this.parentElement.parentElement.style.display='none'"></button>
+                </div>
+                <div class="message-body">
+                    <% value.each do |message| %>
+                        <p><%= message %></p>
+                    <% end %>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

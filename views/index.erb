@@ -1,0 +1,36 @@
+<div class="container has-text-centered">
+    <div class="column is-6 is-offset-3">
+        <h1 class="title">NexusLab</h1>
+        <h2 class="subtitle">
+            Descubra o futuro, conquistando o desconhecido
+        </h2>
+        <div class="content">
+            <p>
+            Na NexusLab, estamos comprometidos em levar a pesquisa e
+            desenvolvimento para novos patamares. Nossa missão é explorar os
+            limites da inovação, desafiando o convencional e moldando o futuro.
+            </p>
+            <h3 class="title is-3">Recursos Exclusivos:</h3>
+            <ul class="has-text-justified">
+                <li><b>Projetos de Pesquisa Avançados</b>: Explore nossos projetos líderes de mercado, cada um deles na vanguarda da inovação tecnológica.</li>
+                <li><b>Documentação Revolucionária</b>: Acesse documentos exclusivos que revelam as últimas descobertas e avanços em diversas áreas de pesquisa.</li>
+                <li><b>Colaboradores de Elite</b>: Nossa equipe de pesquisadores é composta pelos melhores mentes do mundo, dedicados a moldar o futuro de maneiras que desafiam a imaginação.</li>
+            </ul>
+            
+            
+            <h3 class="title is-3">Entre em Nosso Mundo Secreto:</h3>
+            <p>Para ter acesso a esses recursos exclusivos, torne-se um membro da NexusLab hoje mesmo. Junte-se à elite da pesquisa e desenvolvimento e faça parte de uma comunidade que não teme explorar o desconhecido.</p>
+            
+
+        </div>
+        <div class="content">
+            <p>NexusLab - Desvendando o Desconhecido, Moldando o Amanhã.</p>
+        </div>
+        <% unless is_logged_in? %>
+            <div class="box">
+                <a href="/auth/login" class="button is-info">Entrar</a>
+                <button class="button" disabled>Cadastro</button>
+            </div>
+        <% end %>
+    </div>
+</div>

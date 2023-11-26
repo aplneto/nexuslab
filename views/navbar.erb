@@ -1,0 +1,59 @@
+<script src="/js/navbar.js"></script>
+<nav class="navbar has-shadow is-white">
+    <!-- logo / brand -->
+    <div class="navbar-brand">
+        <a href="/" class="navbar-item">
+            <!--<img src="" alt="NexusLab" style="max-height: 70px;" class="py-2 px-2">-->
+            <p class="title">NexusLab</p>
+        </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+        <div class="navbar-start has-text-centered">
+            <a href="/avisos/" class="navbar-item">Avisos</a>
+            <a href="/faq" class="navbar-item">FAQ</a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="div buttons">
+                    <% if is_logged_in? %>
+                        <a href="/user" class="button">
+                            <span class="icon is-small">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span>Perfil</span>
+                        </a>
+
+                        <a href="/project/" class="button">
+                            <span class="icon is-small">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </span>
+                            <span>Projetos</span>
+                        </a>
+                        <% if is_admin? %>
+                            <a href="/admin" class="button is-info">
+                                <span class="icon is-small">
+                                    <i class="fa fa-cog"></i>
+                                </span>
+                                <span>Admin</span>
+                            </a>
+                        <% end %>
+                        <a href="/auth/logout" class="button is-danger">
+                            <span class="icon is-small">
+                                <i class="fa fa-sign-out"></i>
+                            </span>
+                            <span>Sair</span>
+                        </a>
+                    <% else %>
+                        <a href="/auth/login" class="button is-info">
+                            <span class="icon is-small">
+                                <i class="fa fa-sign-in"></i>
+                            </span>
+                            <span>Entrar</span>
+                        </a>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

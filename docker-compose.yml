@@ -1,0 +1,27 @@
+version: '3'
+services:
+  nexuslab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8443:8443
+    environment:
+      - DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+      - RACK_ENV=production
+      - DATABASE_HOST=postgresdb
+      - DATABASE_NAME=nexuslab
+      - DATABASE_USER=nexuslab
+      - DATABASE_PASSWORD=44111a10ca300dd22dd9342c5bfbe74b60887a6342f618
+      - DATABASE_PORT=5432
+    depends_on:
+      - postgresdb
+    tty: true
+  postgresdb:
+    image:  postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=44111a10ca300dd22dd9342c5bfbe74b60887a6342f618
+      - POSTGRES_USER=nexuslab
+      - POSTGRES_DB=nexuslab
+    restart: always

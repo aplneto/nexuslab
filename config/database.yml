@@ -1,0 +1,22 @@
+default: &default
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+ 
+development:
+  <<: *default
+  database: db/dev.sqlite3
+ 
+test:
+  <<: *default
+  database: db/test.sqlite3
+ 
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: <%= ENV['DATABASE_HOST'] || 'db' %>
+  port: <%= ENV['DATABASE_PORT'] || '5432' %>
+  database: <%= ENV['DATABASE_NAME'] || 'NexusLab' %>
+  username: <%= ENV['DATABASE_USER'] || 'sinatra' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || 'sinatra' %>

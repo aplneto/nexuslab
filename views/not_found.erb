@@ -1,0 +1,22 @@
+<div class="container has-text-centered">
+    <div class="message is-danger">
+        <div class="message-head has-text-danger">
+            <h1 class="title">404</h1>
+        </div>
+        <div class="message-body">
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <img src="/images/404.jpeg" alt="Not found" class="image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let message = "Não foi possível encontrar o caminho <strong>" + window.location.pathname + "</strong> neste servidor";
+    document.getElementById('errorMessage').innerHTML = message;
+</script>
