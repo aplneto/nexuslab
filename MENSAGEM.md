@@ -12,9 +12,9 @@ Somos o grupo **Consciência Coletiva** e estamos convocando mentes brilhantes e
 
 - **[Nexuslab](/):** antigo repositório de projetos da Wicked S.A. foi descontinuado e será excluído em breve.
 - **[Site Institucional](https://github.com/Shinji-Mimura/ShinjiPath/)**: Protótipo de site institucional da empresa, será usado para substituir o site institucional atual.
-- **[Intranet Solutions](https://github.com/GabrielVanLoon/TAC_CTF_Challenges_2023)**: Aplicação interna da Wicked S.A., pode ter vazado para o domínio público por má configuração de seu time de infraestrutura.
+- **[Intranet Solutions](https://github.com/GabrielVanLoon/TAC_CTF_Challenges_2023/tree/main/TAC_GraphQL_Challenge)**: Aplicação interna da Wicked S.A., pode ter vazado para o domínio público por má configuração de seu time de infraestrutura.
 
-Os [escritórios](https://github.com/GabrielVanLoon/TAC_CTF_Challenges_2023) da empresa também estão sob investigação<sup>1</sup>.
+Os [escritórios](https://github.com/GabrielVanLoon/TAC_CTF_Challenges_2023/tree/main/TAC_Automation_Challenge) da empresa também estão sob investigação<sup>1</sup>.
 
 Nota: _Esta operação é um evento simulado, sem implicações legais reais. Nosso objetivo é promover o entretenimento, treinamento e a ética hacker._
 
