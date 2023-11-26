@@ -7,9 +7,9 @@ metodologia voltada para pentests de aplicação web.
 A NexusLab foi construída para simular uma aplicação vulnerável real. Algumas
 das vulnerabilidades nela presentes foram propsitalmente colocadas para serem
 exploradas em desafios, no entanto, existem outras falhas de segurança
-(algumas propositais e outras acidentais) que a afetam. Em anexo neste arquivo
-há uma relação de vulnerabilidades identificadas na aplicação, se quiser um
-desafio adicional, tente encontrar as vulnerabilidades listadas.
+(algumas propositais e outras acidentais) que a afetam. Em [anexo](#anexo) neste
+arquivo há uma relação de vulnerabilidades identificadas na aplicação, se quiser
+um desafio adicional, tente encontrar as vulnerabilidades listadas.
 
 ## Whats on your head?
 **Descrição**: Parte importante de um pentest web é identificar o tipo de
@@ -346,4 +346,3 @@ nova vulnerabilidade. Vamos respondê-los assim que possível.
 * https://www.sidechannel.blog/falhas-no-controle-de-acesso-em-aplicacoes-web/
 * https://www.sidechannel.blog/era-uma-vez-uma-enumeracao-de-usuarios/
 * https://www.sidechannel.blog/ataques-de-forca-bruta-medidas-de-protecao-e-mitigacao/
-* 
