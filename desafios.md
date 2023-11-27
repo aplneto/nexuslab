@@ -131,7 +131,7 @@ usuários está listado em seu perfil, é possível a usar _wordlists_ de senhas
 conhecidas como a [RockYou.txt](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz)
 para fazer login como um dos usuários cadastrados.
 
-## Confidencial report!
+## Confidential report!
 
 **Descrição**: Agora é hora de coletar as evidenciais. Tente identificar o
 funcionário da Wicked Corp suspeito das acusações e colete as evidências
@@ -239,7 +239,7 @@ descobrir qual é?
 
 Além do relatório que conta como a Wicked S.A. usou o ransomware Boiuna contra
 um de seus ex-clientes, o outro arquivo disponível durante a resolução do desaio
-[_Confidencial report!_](#confidencial-report), é o _Changelog_ do ransomware.
+[_Confidential report!_](#confidential-report), é o _Changelog_ do ransomware.
 No final desse arquivo o desenvolvedor menciona que o ransomware foi removido do
 repositório do projeto, mas que pode ser baixado via SSH do servidor. Embora o
 acesso a SSH não seja possível, ainda existem formas alternativas de executar
