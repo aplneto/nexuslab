@@ -16,7 +16,8 @@ um desafio adicional, tente encontrar as vulnerabilidades listadas.
 tecnologia com a qual se está trabalhando.
 
 **Dicas**:
-    - Verifique os headers do servidor
+
+- Verifique os headers do servidor
 
 Os cabeçalhos de aplicações web são ótima fonte de informação sobre as
 aplicações. Neste caso, para acessar os cabeçalhos da aplicação, basta examinar
@@ -30,7 +31,8 @@ encontrada no cabeçalho HTTP X-Flag:
 mesmo que acidentalmente, paths e funcionalidades sensíveis da aplicação.
 
 **Dicas**:
-    - Verifique o arquivo robots.txt
+
+- Verifique o arquivo robots.txt
 
 Outra fonte de informação é o arquivo **robots.txt**. Esse arquivo está presente
 em muitas aplicações web e serve de diretriz para web crawlers indexadores, como
