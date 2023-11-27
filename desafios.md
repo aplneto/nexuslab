@@ -34,7 +34,7 @@ mesmo que acidentalmente, paths e funcionalidades sensíveis da aplicação.
 
 Outra fonte de informação é o arquivo **robots.txt**. Esse arquivo está presente
 em muitas aplicações web e serve de diretriz para web crawlers indexadores, como
-o Googlebot e o Bingbot, usados pelos mecanismos de busca para coletar indexar
+o Googlebot e o Bingbot, usados pelos mecanismos de busca para indexar
 conteúdo de sites.
 
 Os desenvolvolvedores podem orientar esses crawlers a evitar a indexação de
@@ -55,11 +55,14 @@ Por sua vez, a próxima imagem evidencia o conteúdo do arquivo flag.txt:
 verificar paths, diretórios e funcionalidades comumente associadas a ela.
 
 **Dicas**:
-    - Tente criar uma conta de usuário na aplicação
-    - O Thin server é comumente utilizado no deploy de aplicações
-    desenvolvidas com Sinatra e Rails.
-    - Você pode tentar acessar a aplicação aproveitando-se de usuários com
-    senhas potencialmente fracas.
+    
+- Tente criar uma conta de usuário na aplicação
+
+- O Thin server é comumente utilizado no deploy de aplicações
+desenvolvidas com Sinatra e Rails.
+
+- Você pode tentar acessar a aplicação aproveitando-se de usuários com
+senhas potencialmente fracas.
 
 A flag do [primeiro desafio](#whats-on-your-head) chamou a atenção do usuário
 para os cabeçalhos HTTP da aplicação. Dentre eles, o cabeçalho **Server** indica
@@ -97,8 +100,9 @@ Mais detalhes sobre rotas no Ruby on Rails podem ser encontrados
 que compõem seus cadastros.
 
 **Dicas**:
-    - Identifique o perfil do administrador da plataforma.
-    - Observe o código-fonte da página de perfil do administrador.
+    
+- Identifique o perfil do administrador da plataforma.
+- Observe o código-fonte da página de perfil do administrador.
 
 Depois de conseguir criar uma conta e fazer login. Ao clicar no botão
 "Perfil", na barra de navegação, o usuário é redirecionado para a URL
@@ -132,10 +136,11 @@ funcionário da Wicked Corp suspeito das acusações e colete as evidências
 necessárias.
 
 **Dicas**:
-    - Acesse os projetos dos usuários da aplicação.
-    - Metadados comumente possuem informações potencialmente sensíveis. Use uma
-    ferramenta como o [Exiftool](https://exiftool.org/), ou uma extensão do
-    BurpSuite para verificar os metadados de arquivos recuperados da aplicação.
+    
+- Acesse os projetos dos usuários da aplicação.
+- Metadados comumente possuem informações potencialmente sensíveis. Use uma
+ferramenta como o [Exiftool](https://exiftool.org/), ou uma extensão do
+BurpSuite para verificar os metadados de arquivos recuperados da aplicação.
 
 Uma vez que o login na aplicação tenha sido feito, é possível acessar os
 projetos listados nos perfis dos usuários da aplicação. Ao acessar um projeto o
@@ -157,12 +162,13 @@ quanto em seus metadados.
 que pode permitir escalações horizontais e verticais de privilégios.
 
 **Dicas**:
-    - Tente acessar o painel administrativo da aplicação
-    - Um dos principais componentes do protocolo HTTP é o método.
-    A [RFC-7231](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3)
-    define funções específicas para cada um dos métodos.
-    Atente-se aos atributos que compõem um usuário e combine essa informação com o
-    seu conhecimento sobre métodos HTTP.
+
+- Tente acessar o painel administrativo da aplicação
+- Um dos principais componentes do protocolo HTTP é o método.
+A [RFC-7231](https://datatracker.ietf.org/doc/html/rfc7231#section-4.3)
+define funções específicas para cada um dos métodos.
+Atente-se aos atributos que compõem um usuário e combine essa informação com o
+seu conhecimento sobre métodos HTTP.
 
 A RFC-7231, que define o método HTTP, atribui funcionalidades específicas para
 cada um dos métodos do protocolo. O método GET, por exemplo, está associado a
@@ -225,9 +231,9 @@ descobrir qual é?
 **Descrição**: Hora de a Wicked S.A. provar do próprio veneno!
 
 **Dicas**:
-    - Execute o ransomware da Wicked S.A no servidor deles.
-    - Lembre-se, tags HTML não são usadas apenas para escrever páginas
-    estáticas.
+
+- Execute o ransomware da Wicked S.A no servidor deles.
+- Lembre-se, tags HTML não são usadas apenas para escrever páginas estáticas.
 
 Além do relatório que conta como a Wicked S.A. usou o ransomware Boiuna contra
 um de seus ex-clientes, o outro arquivo disponível durante a resolução do desaio
