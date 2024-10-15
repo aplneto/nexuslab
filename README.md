@@ -13,7 +13,7 @@ uso do docker para execução em um ambiente mais controlado.
 
 1. Faça o download desse repositório;
 2. Acesse o diretório e execute o comando `docker-compose up`. Se estiver no
-Windows você pode usar o Docker Desktop para selecionar o arquivo;
+Windows você pode usar o Docker Desktop para selecionar o arquivo:
 **docker-compose.yml**.
 3. Acesse a aplicação no seu navegador a partir da URL http://127.0.0.1:8443
 
